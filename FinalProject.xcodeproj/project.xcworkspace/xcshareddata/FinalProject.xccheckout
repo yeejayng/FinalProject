@@ -12,6 +12,8 @@
 	<dict>
 		<key>5D7AE6F26A6D7E393D8CA002FDE5D0D8ABCDAE62</key>
 		<string>https://github.com/audiokit/AudioKit.git</string>
+		<key>8A9E4F6E7BAE711BF0A865A6B69CE3420EABEF0B</key>
+		<string>https://github.com/yeejayng/FinalProject.git</string>
 		<key>C8E28DF78052AF36F13427BD621ACCB4286FE24B</key>
 		<string>https://github.com/CosmosCluster5/group_02.git</string>
 	</dict>
@@ -21,15 +23,17 @@
 	<dict>
 		<key>5D7AE6F26A6D7E393D8CA002FDE5D0D8ABCDAE62</key>
 		<string>../../../AudioKit</string>
-		<key>C8E28DF78052AF36F13427BD621ACCB4286FE24B</key>
+		<key>8A9E4F6E7BAE711BF0A865A6B69CE3420EABEF0B</key>
 		<string>../..</string>
+		<key>C8E28DF78052AF36F13427BD621ACCB4286FE24B</key>
+		<string>../../../group_02</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/CosmosCluster5/group_02.git</string>
+	<string>https://github.com/yeejayng/FinalProject.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C8E28DF78052AF36F13427BD621ACCB4286FE24B</string>
+	<string>8A9E4F6E7BAE711BF0A865A6B69CE3420EABEF0B</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -39,6 +43,14 @@
 			<string>5D7AE6F26A6D7E393D8CA002FDE5D0D8ABCDAE62</string>
 			<key>IDESourceControlWCCName</key>
 			<string>AudioKit</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8A9E4F6E7BAE711BF0A865A6B69CE3420EABEF0B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FinalProject</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
