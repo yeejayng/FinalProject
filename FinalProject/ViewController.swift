@@ -16,11 +16,26 @@ class ViewController: UIViewController
     var updateAnalysis = AKEvent()
     var analysisSequence = AKSequence()
     var noteFrequencies = [16.35,17.32,18.35,19.45,20.6,21.83,23.12,24.5,25.96,27.5,29.14,30.87]
-    var noteNamesWithFlats  = ["C", "D♭","D","E♭","E","F","G♭","G","A♭","A","B♭","B"]
+    var noteNamesWithSharps = ["C", "C♯","D","D♯","E","F","F♯","G","G♯","A","A♯","B"]
     
     @IBOutlet weak var frequencyLabel: UILabel!
     @IBOutlet weak var noteNameLabel: UILabel!
     @IBOutlet weak var allNotesDisplay: UILabel!
+    
+    
+    @IBOutlet weak var C: UIButton!
+    @IBOutlet weak var Cs: UIButton!
+    @IBOutlet weak var D: UIButton!
+    @IBOutlet weak var Ds: UIButton!
+    @IBOutlet weak var E: UIButton!
+    @IBOutlet weak var F: UIButton!
+    @IBOutlet weak var Fs: UIButton!
+    @IBOutlet weak var G: UIButton!
+    @IBOutlet weak var Gs: UIButton!
+    @IBOutlet weak var A: UIButton!
+    @IBOutlet weak var As: UIButton!
+    @IBOutlet weak var B: UIButton!
+    
 
     
     override func viewDidLoad()
@@ -86,14 +101,64 @@ class ViewController: UIViewController
         
         if analyzer.trackedAmplitude.value > 0.001
         {
+            allKeysToNeutral()
             frequencyLabel.text="\(analyzer.trackedFrequency.value)"
-            noteNameLabel.text="\(noteNamesWithFlats[index])"
-            allNotesDisplay.text = "\(allNotesDisplay.text! + noteNamesWithFlats[index])"
+            noteNameLabel.text="\(noteNamesWithSharps[index])"
+            notePlayed(noteNamesWithSharps[index])
+            allNotesDisplay.text = "\(allNotesDisplay.text! + noteNamesWithSharps[index])"
         }
-
-        
     }
     
+    func notePlayed(note: String)
+    {
+        switch note
+        {
+        case "\(noteNamesWithSharps[0])":
+            C.backgroundColor = UIColor.redColor()
+        case "\(noteNamesWithSharps[1])":
+            Cs.backgroundColor = UIColor.redColor()
+        case "\(noteNamesWithSharps[2])":
+            D.backgroundColor = UIColor.redColor()
+        case "\(noteNamesWithSharps[3])":
+            Ds.backgroundColor = UIColor.redColor()
+        case "\(noteNamesWithSharps[4])":
+            E.backgroundColor = UIColor.redColor()
+        case "\(noteNamesWithSharps[5])":
+            F.backgroundColor = UIColor.redColor()
+        case "\(noteNamesWithSharps[6])":
+            Fs.backgroundColor = UIColor.redColor()
+        case "\(noteNamesWithSharps[7])":
+            G.backgroundColor = UIColor.redColor()
+        case "\(noteNamesWithSharps[8])":
+            Gs.backgroundColor = UIColor.redColor()
+        case "\(noteNamesWithSharps[9])":
+            A.backgroundColor = UIColor.redColor()
+        case "\(noteNamesWithSharps[10])":
+            As.backgroundColor = UIColor.redColor()
+        case "\(noteNamesWithSharps[11])":
+            B.backgroundColor = UIColor.redColor()
+
+        default:
+            allKeysToNeutral()
+        }
+    }
+    
+    func allKeysToNeutral()
+    {
+        C.backgroundColor = UIColor.greenColor()
+        Cs.backgroundColor = UIColor.blackColor()
+        D.backgroundColor = UIColor.greenColor()
+        Ds.backgroundColor = UIColor.blackColor()
+        E.backgroundColor = UIColor.greenColor()
+        F.backgroundColor = UIColor.greenColor()
+        Fs.backgroundColor = UIColor.blackColor()
+        G.backgroundColor = UIColor.greenColor()
+        Gs.backgroundColor = UIColor.blackColor()
+        A.backgroundColor = UIColor.greenColor()
+        As.backgroundColor = UIColor.blackColor()
+        B.backgroundColor = UIColor.greenColor()
+        
+    }
 
     override func didReceiveMemoryWarning()
     {
