@@ -14,8 +14,6 @@
 		<string>https://github.com/audiokit/AudioKit.git</string>
 		<key>8A9E4F6E7BAE711BF0A865A6B69CE3420EABEF0B</key>
 		<string>https://github.com/yeejayng/FinalProject.git</string>
-		<key>C8E28DF78052AF36F13427BD621ACCB4286FE24B</key>
-		<string>https://github.com/CosmosCluster5/group_02.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>FinalProject.xcodeproj</string>
@@ -25,8 +23,6 @@
 		<string>../../../AudioKit</string>
 		<key>8A9E4F6E7BAE711BF0A865A6B69CE3420EABEF0B</key>
 		<string>../..</string>
-		<key>C8E28DF78052AF36F13427BD621ACCB4286FE24B</key>
-		<string>../../../group_02</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/yeejayng/FinalProject.git</string>
@@ -51,14 +47,6 @@
 			<string>8A9E4F6E7BAE711BF0A865A6B69CE3420EABEF0B</string>
 			<key>IDESourceControlWCCName</key>
 			<string>FinalProject</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C8E28DF78052AF36F13427BD621ACCB4286FE24B</string>
-			<key>IDESourceControlWCCName</key>
-			<string>group_02</string>
 		</dict>
 	</array>
 </dict>
